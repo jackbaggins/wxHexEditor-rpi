@@ -31,23 +31,23 @@
 #include "HexDialogs.h"
 #include "HexPanels.h"
 #include "../resources/wxhex.xpm"
-#include <wx/filename.h>
-#include <wx/dir.h>
-#include <wx/dnd.h>
-#include <wx/aboutdlg.h>
-#include <wx/artprov.h>
-#include <wx/aui/aui.h>
-#include <wx/aui/auibar.h>
-#include <wx/aui/auibook.h>
-#include <wx/config.h>
-#include <wx/url.h>
-#include <wx/textdlg.h>
-#include <wx/mstream.h>
-#include <wx/docview.h>
-#include <wx/regex.h>
+#include <wx-3.0/wx/filename.h>
+#include <wx-3.0/wx/dir.h>
+#include <wx-3.0/wx/dnd.h>
+#include <wx-3.0/wx/aboutdlg.h>
+#include <wx-3.0/wx/artprov.h>
+#include <wx-3.0/wx/aui/aui.h>
+#include <wx-3.0/wx/aui/auibar.h>
+#include <wx-3.0/wx/aui/auibook.h>
+#include <wx-3.0/wx/config.h>
+#include <wx-3.0/wx/url.h>
+#include <wx-3.0/wx/textdlg.h>
+#include <wx-3.0/wx/mstream.h>
+#include <wx-3.0/wx/docview.h>
+#include <wx-3.0/wx/regex.h>
 
 #if _FSWATCHER_
-#include <wx/fswatcher.h>
+#include <wx-3.0/wx/fswatcher.h>
 #endif // _FSWATCHER_
 
 #if defined __WXMAC__
@@ -144,7 +144,7 @@ class VersionChecker : public UpdateDialogGui {
 		void OnChkDisplay( wxCommandEvent& event );
 	};
 
-#include <wx/ipc.h>
+#include <wx-3.0/wx/ipc.h>
 //For open files with wxHexEditor mime
 class IPCServer : public wxServer {
 	public:

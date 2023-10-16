@@ -23,8 +23,8 @@
 
 #define NANINT 0xFFFFFFFFFFFFFFFFULL
 #include "HexDialogs.h"
-#include <wx/progdlg.h>
-#include <wx/filepicker.h>
+#include <wx-3.0/wx/progdlg.h>
+#include <wx-3.0/wx/filepicker.h>
 #include "../mhash/include/mhash.h"
 
 #ifdef __SSE2__

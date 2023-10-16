@@ -32,7 +32,7 @@ extern int fake_block_size;
 //    EVT_KILL_FOCUS( wxHexCtrl::OnKillFocus )
 //END_EVENT_TABLE()
 
-#include <wx/arrimpl.cpp> // this is a magic incantation which must be done!
+#include <wx-3.0/wx/arrimpl.cpp> // this is a magic incantation which must be done!
 WX_DEFINE_OBJARRAY(wxArrayUINT64);
 
 HexEditorCtrl::HexEditorCtrl(wxWindow* parent, int id, const wxPoint& pos, const wxSize& size, long style):

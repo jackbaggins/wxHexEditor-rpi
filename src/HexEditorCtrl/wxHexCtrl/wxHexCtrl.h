@@ -24,16 +24,16 @@
 #ifndef __wxHexCtrl__
 #define __wxHexCtrl__
 #include <stdint.h>
-#include <wx/defs.h>
-#include <wx/buffer.h>
-#include <wx/graphics.h>
-#include <wx/textctrl.h>
-#include <wx/caret.h>
-#include <wx/wx.h>
-#include <wx/config.h>
-#include <wx/fileconf.h>
-#include <wx/dcbuffer.h>
-#include <wx/clipbrd.h>
+#include <wx-3.0/wx/defs.h>
+#include <wx-3.0/wx/buffer.h>
+#include <wx-3.0/wx/graphics.h>
+#include <wx-3.0/wx/textctrl.h>
+#include <wx-3.0/wx/caret.h>
+#include <wx-3.0/wx/wx.h>
+#include <wx-3.0/wx/config.h>
+#include <wx-3.0/wx/fileconf.h>
+#include <wx-3.0/wx/dcbuffer.h>
+#include <wx-3.0/wx/clipbrd.h>
 
 #include "Tag.h"
 

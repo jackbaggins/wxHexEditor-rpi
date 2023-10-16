@@ -23,8 +23,8 @@
 
 
 #include "wxHexCtrl.h"
-#include <wx/encconv.h>
-#include <wx/fontmap.h>
+#include <wx-3.0/wx/encconv.h>
+#include <wx-3.0/wx/fontmap.h>
 
 BEGIN_EVENT_TABLE(wxHexCtrl,wxScrolledWindow )
 	EVT_CHAR( wxHexCtrl::OnChar )

@@ -46,7 +46,7 @@ HexEditor::HexEditor(	wxWindow* parent,
 	ComparatorHexEditor=NULL;
 	// Here, code praying to the GOD for protecting our open file from wxHexEditor's bugs and other things.
 	// This is really crucial step! Be adviced to not remove it, even if you don't believer.
-	printf("Rahman ve Rahim olan Allah'ın adıyla.\n");
+	printf("Rahman ve Rahim olan Allah'ın adıyla. (Pray that the file opened is safe from bugs!)\n");
 	myfile = NULL;
 #ifndef DO_NOT_USE_THREAD_FOR_SCROLL
 	myscrollthread = NULL;

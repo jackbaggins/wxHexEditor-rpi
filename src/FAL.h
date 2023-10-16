@@ -31,11 +31,11 @@
 #ifndef FAL_H
 #define FAL_H
 #include <iostream>	//for std::cout...
-#include <wx/wx.h>
-#include <wx/file.h>
-#include <wx/filename.h>
-#include <wx/msgdlg.h>
-#include <wx/dynarray.h>
+#include <wx-3.0/wx/wx.h>
+#include <wx-3.0/wx/file.h>
+#include <wx-3.0/wx/filename.h>
+#include <wx-3.0/wx/msgdlg.h>
+#include <wx-3.0/wx/dynarray.h>
 #include <stdint.h>
 
 //this utility uses old ECS format.
@@ -55,7 +55,7 @@
 #ifdef WX_GCH
 	#include <wx_pch.h>
 #else
-	#include <wx/wx.h>
+	#include <wx-3.0/wx/wx.h>
 #endif
 
 #ifdef __WXMSW__

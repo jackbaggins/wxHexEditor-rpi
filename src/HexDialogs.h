@@ -30,11 +30,11 @@
 #include "HexEditorCtrl/HexEditorCtrl.h"
 #include "HexEditorGui.h"
 #include <vector>
-#include <wx/dnd.h>
+#include <wx-3.0/wx/dnd.h>
 #ifdef WX_GCH
 	#include <wx_pch.h>
 #else
-	#include <wx/wx.h>
+	#include <wx-3.0/wx/wx.h>
 #endif
 
 bool HexVerifyAndPrepare(wxString& hexval, wxString Value_Name, wxWindow* parent=NULL);

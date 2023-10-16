@@ -8,22 +8,22 @@
 #ifndef __HEXEDITORCTRLGUI_H__
 #define __HEXEDITORCTRLGUI_H__
 
-#include <wx/artprov.h>
-#include <wx/xrc/xmlres.h>
+#include <wx-3.0/wx/artprov.h>
+#include <wx-3.0/wx/xrc/xmlres.h>
 class wxHexCtrl;
 class wxHexOffsetCtrl;
 class wxHexTextCtrl;
 
-#include <wx/string.h>
-#include <wx/stattext.h>
-#include <wx/gdicmn.h>
-#include <wx/font.h>
-#include <wx/colour.h>
-#include <wx/settings.h>
-#include <wx/textctrl.h>
-#include <wx/scrolbar.h>
-#include <wx/sizer.h>
-#include <wx/panel.h>
+#include <wx-3.0/wx/string.h>
+#include <wx-3.0/wx/stattext.h>
+#include <wx-3.0/wx/gdicmn.h>
+#include <wx-3.0/wx/font.h>
+#include <wx-3.0/wx/colour.h>
+#include <wx-3.0/wx/settings.h>
+#include <wx-3.0/wx/textctrl.h>
+#include <wx-3.0/wx/scrolbar.h>
+#include <wx-3.0/wx/sizer.h>
+#include <wx-3.0/wx/panel.h>
 
 #include "wxHexCtrl/wxHexCtrl.h"
 

@@ -67,12 +67,12 @@ void MyClient::Connect(const wxString& sHost, const wxString& sService, const wx
 	MakeConnection(sHost, sService, sTopic);
 	}
 
-#include <wx/snglinst.h>
-#include <wx/stdpaths.h>
+#include <wx-3.0/wx/snglinst.h>
+#include <wx-3.0/wx/stdpaths.h>
 #if !defined(__MINGW32__)
 #include <sys/resource.h>
 #endif
-#include <wx/cmdline.h>
+#include <wx-3.0/wx/cmdline.h>
 
 const wxCmdLineEntryDesc cmdLineDesc[] = {
 		{ wxCMD_LINE_SWITCH, "h", "help", "show this help message",     	wxCMD_LINE_VAL_NONE,    wxCMD_LINE_OPTION_HELP },

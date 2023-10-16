@@ -35,7 +35,7 @@
 
 #ifndef _VERSION_
 	#define _VERSION_ "0.25"
-	#define _VERSION_S_ _VERSION_ " Beta Development"
+	#define _VERSION_S_ _VERSION_ " Beta Development fork"
 #endif // _VERSION_
 
 #ifdef __WXMSW__
@@ -43,14 +43,14 @@
 	#elif defined(__WXOSX__)
 	#define _VERSION_STR_ _VERSION_S_ " for Mac"
 	#elif defined(__WXGTK__) && defined(__linux__)
-	#define _VERSION_STR_ _VERSION_S_ " for Linux"
+	#define _VERSION_STR_ _VERSION_S_ " for Raspberry Pi OS"
 	#elif defined(__WXGTK__) && defined(BSD)
 	#define _VERSION_STR_ _VERSION_S_ " for BSD"
 #else
 	#define _VERSION_STR_ _VERSION_S_
 #endif
 
-#include <wx/app.h>
+#include <wx-3.0/wx/app.h>
 #include "HexEditorFrame.h"
 
 class wxHexEditorApp : public wxApp {

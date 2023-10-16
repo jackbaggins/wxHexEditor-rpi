@@ -26,15 +26,15 @@
 #define __Tag_h__
 #include <iostream>
 #include <stdint.h>
-#include <wx/clrpicker.h>
+#include <wx-3.0/wx/clrpicker.h>
 #if wxCHECK_VERSION(2, 9, 0)
-	#include <wx/cmndata.h>
+	#include <wx-3.0/wx/cmndata.h>
 #endif
 #if wxCHECK_VERSION(2, 9, 1)
-	#include <wx/colourdata.h>
+	#include <wx-3.0/wx/colourdata.h>
 #endif
-#include <wx/popupwin.h>
-#include <wx/dcmemory.h>
+#include <wx-3.0/wx/popupwin.h>
+#include <wx-3.0/wx/dcmemory.h>
 #include "TagDialogGui.h"
 
 class TagElementData{

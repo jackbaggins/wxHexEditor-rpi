@@ -1,8 +1,9 @@
 WXCONFIG ?= wx-config
 HOST=
 OPT_FLAGS += -fopenmp
-LIBS += -lgomp
-WXCXXFLAGS= `$(WXCONFIG) --cxxflags` -Iudis86 -Imhash/include -MMD -Wall -O2 -DNDEBUG
+LIBSOMP += -lgomp
+#Added include path for wx-3.0, as this appears to be where PiOS Bullseye installs package libwxgtk3.0-gtk3-dev
+WXCXXFLAGS= `$(WXCONFIG) --cxxflags` -Iudis86 -Imhash/include -I/usr/include/wx-3.0 -fopenmp -MMD -Wall -O2 -DNDEBUG
 WXLDFLAGS = `$(WXCONFIG) --libs` `$(WXCONFIG) --libs aui` `$(WXCONFIG) --libs core`
 #add this ldflags for WinConsole  "-Wl,--subsystem,console -mconsole" for win-debug
 #LDFLAGS += -Wl,--subsystem,console -mconsole
@@ -55,10 +56,10 @@ $(OBJECTS): $(LIBS) $(SOURCES)
 MOBJECTS=$(LANGUAGES:.po=.mo)
 
 $(EXECUTABLE): $(OBJECTS)
-	$(CXX) ${CXXFLAGS} ${CPPFLAGS} $(OPTFLAGS) $(OBJECTS) $(LIBS) $(WXLDFLAGS) ${LDFLAGS} -o $@
+	$(CXX) ${CXXFLAGS} ${CPPFLAGS} $(OPTFLAGS) $(OBJECTS) $(LIBS) -lgomp $(WXLDFLAGS) ${LDFLAGS} -o $@
 
-.cpp.o: $(LIBS)
-	$(CXX) -c $(CXXFLAGS) $(CPPFLAGS) $(OPTFLAGS) $(WXCXXFLAGS) $< -o $@
+%.o: %.cpp $(LIBS)
+	$(CXX) -c $(CXXFLAGS) $(CPPFLAGS) $(WXCXXFLAGS) $(OPTFLAGS) $< -o $@
 
 %.o : %.rc
 	$(RC) $(RCFLAGS) $< -o $@
@@ -77,7 +78,7 @@ udis86/libudis86/.libs/libudis86.a:
 	cd udis86/libudis86; $(MAKE) $(MFLAGS)
 
 mhash/lib/.libs/libmhash.a:
-	cd mhash; ./configure --host=$(HOST) CC="$(CC)" CXX="$(CXX)" CFLAGS="$(CFLAGS) ${OPTFLAGS}" CXXFLAGS="$(CXXFLAGS) ${OPTFLAGS}" CPPFLAGS="$(CPPFLAGS)"
+	cd mhash; ./configure --build=aarch64-unknown-linux-gnu --host=$(HOST) CC="$(CC)" CXX="$(CXX)" CFLAGS="$(CFLAGS) ${OPTFLAGS}" CXXFLAGS="$(CXXFLAGS) ${OPTFLAGS}" CPPFLAGS="$(CPPFLAGS)"
 	cd mhash; $(MAKE) $(MFLAGS)
 
 src/windrv.o:

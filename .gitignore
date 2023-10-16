@@ -2,5 +2,24 @@
 build
 bin
 
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Build artifacts
+*.mo
+mhash/autom4te.cache/
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
 # Visual Studio Code
 .vscode

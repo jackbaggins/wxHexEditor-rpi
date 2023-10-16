@@ -1,3 +1,9 @@
+wxHexEditor v0.25.1 Raspberry Pi Beta 16/10/2023
+Initial release just to get it foundationally working on PiOS
+Adding the additional version number to represent the Raspberri Pi OS version here
+Fixed makefile so that OpenMP works correctly for the parallelized tasks
+Changed includes in makefile to account for where PiOS installs WX
+
 wxHexEditor v0.24 Beta  31/12/2017
 Fixed many critical bugs and assertions. (Thanks Mikhail Kasimov for Beta testing.)
 Fixed MacOSX dialog crashes and make OSX version usable again.
