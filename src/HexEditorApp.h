@@ -34,7 +34,7 @@
 #define WXHEXEDITORAPP_H
 
 #ifndef _VERSION_
-	#define _VERSION_ "0.25"
+	#define _VERSION_ "0.25.1"
 	#define _VERSION_S_ _VERSION_ " Beta Development fork"
 #endif // _VERSION_
 
