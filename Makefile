@@ -2,8 +2,7 @@ WXCONFIG ?= wx-config
 HOST=
 OPT_FLAGS += -fopenmp
 LIBSOMP += -lgomp
-#Added include path for wx-3.0, as this appears to be where PiOS Bullseye installs package libwxgtk3.0-gtk3-dev
-WXCXXFLAGS= `$(WXCONFIG) --cxxflags` -Iudis86 -Imhash/include -I/usr/include/wx-3.0 -fopenmp -MMD -Wall -O2 -DNDEBUG
+WXCXXFLAGS= `$(WXCONFIG) --cxxflags` -Iudis86 -Imhash/include -fopenmp -MMD -Wall -O2 -DNDEBUG
 WXLDFLAGS = `$(WXCONFIG) --libs` `$(WXCONFIG) --libs aui` `$(WXCONFIG) --libs core`
 #add this ldflags for WinConsole  "-Wl,--subsystem,console -mconsole" for win-debug
 #LDFLAGS += -Wl,--subsystem,console -mconsole

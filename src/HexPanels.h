@@ -32,16 +32,16 @@
 #ifdef WX_GCH
 #include <wx_pch.h>
 #else
-#include <wx-3.0/wx/wx.h>
+#include <wx/wx.h>
 #endif
 
 #ifndef HEXPANELS_H
 #define HEXPANELS_H
 
-#include <wx-3.0/wx/filename.h>
+#include <wx/filename.h>
 
 #include <stdint.h>
-#include <wx-3.0/wx/memory.h>
+#include <wx/memory.h>
 
 #define HAS_A_TIME_MACHINEx
 #define HAS_A_EXFAT_TIME

@@ -12,7 +12,7 @@
 #endif //__BORLANDC__
 
 #ifndef WX_PRECOMP
-#include <wx-3.0/wx/wx.h>
+#include <wx/wx.h>
 #endif //WX_PRECOMP
 
 #include "wxHexCtrl/wxHexCtrl.h"

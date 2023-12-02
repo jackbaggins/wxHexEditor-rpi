@@ -50,7 +50,7 @@
 	#define _VERSION_STR_ _VERSION_S_
 #endif
 
-#include <wx-3.0/wx/app.h>
+#include <wx/app.h>
 #include "HexEditorFrame.h"
 
 class wxHexEditorApp : public wxApp {

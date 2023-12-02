@@ -27,11 +27,11 @@
 
 #include "../mhash/include/mhash.h"
 
-#include <wx-3.0/wx/ffile.h>
-#include <wx-3.0/wx/clipbrd.h>
-#include <wx-3.0/wx/numdlg.h>
-#include <wx-3.0/wx/version.h>
-#include <wx-3.0/wx/progdlg.h>
+#include <wx/ffile.h>
+#include <wx/clipbrd.h>
+#include <wx/numdlg.h>
+#include <wx/version.h>
+#include <wx/progdlg.h>
 
 #include "FAL.h"
 #include "HexPanels.h"
@@ -47,7 +47,7 @@
 //Only GTK port of Linux is working good on detect changes of file.
 //MSW cannot detect changes in individual files yet in wxWidgets 3.1.0
 #define _FSWATCHER_  1
-#include <wx-3.0/wx/fswatcher.h>
+#include <wx/fswatcher.h>
 #else
 #define _FSWATCHER_  0
 #endif

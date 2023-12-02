@@ -25,7 +25,7 @@
 #define __wxHexEditorCtrl__
 
 #ifdef __WXOSX__
-#include <wx-3.0/wx/version.h>
+#include <wx/version.h>
 #if !wxCHECK_VERSION(3,0,0)
 #define DO_NOT_USE_THREAD_FOR_SCROLL
 #endif
@@ -35,10 +35,10 @@
 #endif
 
 
-#include <wx-3.0/wx/xml/xml.h>
-#include <wx-3.0/wx/filename.h>
-#include <wx-3.0/wx/event.h>
-#include <wx-3.0/wx/config.h>
+#include <wx/xml/xml.h>
+#include <wx/filename.h>
+#include <wx/event.h>
+#include <wx/config.h>
 
 #include "HexEditorCtrlGui.h"
 #define SELECT_EVENT 50005

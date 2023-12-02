@@ -26,7 +26,7 @@
 ///Contact author for licensing.
 
 #include "FAL.h"
-#include <wx-3.0/wx/arrimpl.cpp>
+#include <wx/arrimpl.cpp>
 
 #ifndef __WXMSW__
 	#include <sys/ptrace.h> //No ptrace at windows
