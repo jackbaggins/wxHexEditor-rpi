@@ -1317,7 +1317,7 @@ void FindDialog::OnFindAll( bool internal ) {
 inline int FindDialog::SearchAtBuffer( char *bfr, int bfr_size, char* search, int search_size, unsigned options, std::vector<int> *ret_ptr ) {
 	#ifdef __ARM_ARCH
 		// ARM data type
-		static const int REG_SZ = sizeof(float32x4_t);
+		static const int REG_SZ = sizeof(int32x4_t);
 	#else
 		// SSE data type
 		static const int REG_SZ = sizeof(__m128i);
