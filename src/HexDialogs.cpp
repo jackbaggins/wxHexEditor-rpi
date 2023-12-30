@@ -31,6 +31,10 @@
 #include <emmintrin.h>
 #endif
 
+#ifdef __ARM_ARCH
+#include <arm_neon.h>
+#endif
+
 #ifdef _OPENMP_
 #include <omp.h>
 #endif
@@ -1311,7 +1315,13 @@ void FindDialog::OnFindAll( bool internal ) {
 //Returns indice of first found if used with (  options & SEARCH_FINDALL) ret_ptr return vector pointer filled with locations at buffer
 //WARNING! THIS FUNCTION WILL CHANGE BFR and/or SEARCH strings if SEARCH_MATCHCASE not selected as an option!
 inline int FindDialog::SearchAtBuffer( char *bfr, int bfr_size, char* search, int search_size, unsigned options, std::vector<int> *ret_ptr ) {
-	static const int REG_SZ = sizeof(__m128i);
+	#ifdef __ARM_ARCH
+		// ARM data type
+		static const int REG_SZ = sizeof(float32x4_t);
+	#else
+		// SSE data type
+		static const int REG_SZ = sizeof(__m128i);
+	#endif
 
 	char internal_array[REG_SZ];
 
