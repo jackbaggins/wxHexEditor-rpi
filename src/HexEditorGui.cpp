@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////
-// C++ code generated with wxFormBuilder (version 3.9.0 Dec 16 2019)
+// C++ code generated with wxFormBuilder (version 4.0.0-6-ga75305af)
 // http://www.wxformbuilder.org/
 //
 // PLEASE DO *NOT* EDIT THIS FILE!
@@ -1145,7 +1145,7 @@ FindDialogGui::FindDialogGui( wxWindow* parent, wxWindowID id, const wxString& t
 	bSizerOptions->Add( m_searchtype, 1, wxALL, 3 );
 
 	wxStaticBoxSizer* sbSizerSearchOptions;
-	sbSizerSearchOptions = new wxStaticBoxSizer( new wxStaticBox( this, wxID_ANY, wxT("asa") ), wxVERTICAL );
+	sbSizerSearchOptions = new wxStaticBoxSizer( new wxStaticBox( this, wxID_ANY, wxT("Options") ), wxVERTICAL );
 
 	chkMatchCase = new wxCheckBox( sbSizerSearchOptions->GetStaticBox(), wxID_ANY, wxT("Match Case"), wxDefaultPosition, wxDefaultSize, 0 );
 	sbSizerSearchOptions->Add( chkMatchCase, 0, wxALL, 5 );

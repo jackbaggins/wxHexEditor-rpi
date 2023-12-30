@@ -1,8 +1,8 @@
 ///////////////////////////////////////////////////////////////////////////
-// C++ code generated with wxFormBuilder (version Feb  5 2017)
+// C++ code generated with wxFormBuilder (version 4.0.0-6-ga75305af)
 // http://www.wxformbuilder.org/
 //
-// PLEASE DO "NOT" EDIT THIS FILE!
+// PLEASE DO *NOT* EDIT THIS FILE!
 ///////////////////////////////////////////////////////////////////////////
 
 #include "TagDialogGui.h"
@@ -57,6 +57,7 @@ TagDialogGui::TagDialogGui( wxWindow* parent, wxWindowID id, const wxString& tit
 	bSizerBottom->Add( m_RemoveButton, 0, wxALL, 5 );
 
 	m_SaveButton = new wxButton( this, wxID_SAVE, _("Save"), wxDefaultPosition, wxDefaultSize, 0 );
+
 	m_SaveButton->SetDefault();
 	bSizerBottom->Add( m_SaveButton, 0, wxALL, 5 );
 

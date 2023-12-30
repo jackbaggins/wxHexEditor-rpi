@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////
-// C++ code generated with wxFormBuilder (version 3.9.0 Dec 16 2019)
+// C++ code generated with wxFormBuilder (version 4.0.0-6-ga75305af)
 // http://www.wxformbuilder.org/
 //
 // PLEASE DO *NOT* EDIT THIS FILE!
@@ -127,7 +127,7 @@ class HexEditorGui : public wxFrame
 		wxStatusBar* statusBar;
 		wxAuiNotebook* MyNotebook;
 
-		// Virtual event handlers, overide them in your derived class
+		// Virtual event handlers, override them in your derived class
 		virtual void OnClose( wxCloseEvent& event ) { event.Skip(); }
 		virtual void OnKeyDown( wxKeyEvent& event ) { event.Skip(); }
 		virtual void OnMenuEvent( wxCommandEvent& event ) { event.Skip(); }
@@ -199,7 +199,7 @@ class InterpreterGui : public wxPanel
 		wxStaticText* m_static_timeExFAT_Access;
 		wxTextCtrl* m_textctrl_timeExFAT_Access;
 
-		// Virtual event handlers, overide them in your derived class
+		// Virtual event handlers, override them in your derived class
 		virtual void OnUpdate( wxCommandEvent& event ) { event.Skip(); }
 		virtual void OnTextEdit( wxKeyEvent& event ) { event.Skip(); }
 		virtual void OnTextMouse( wxMouseEvent& event ) { event.Skip(); }
@@ -210,6 +210,7 @@ class InterpreterGui : public wxPanel
 	public:
 
 		InterpreterGui( wxWindow* parent, wxWindowID id = wxID_ANY, const wxPoint& pos = wxPoint( -1,-1 ), const wxSize& size = wxSize( -1,-1 ), long style = wxTAB_TRAVERSAL, const wxString& name = wxEmptyString );
+
 		~InterpreterGui();
 
 };
@@ -227,7 +228,7 @@ class TagPanelGui : public wxPanel
 		wxButton* m_buttonHide;
 		wxButton* m_buttonTAG;
 
-		// Virtual event handlers, overide them in your derived class
+		// Virtual event handlers, override them in your derived class
 		virtual void OnKeyDown( wxKeyEvent& event ) { event.Skip(); }
 		virtual void OnTagSelect( wxCommandEvent& event ) { event.Skip(); }
 		virtual void OnRightMouse( wxMouseEvent& event ) { event.Skip(); }
@@ -239,6 +240,7 @@ class TagPanelGui : public wxPanel
 	public:
 
 		TagPanelGui( wxWindow* parent, wxWindowID id = wxID_ANY, const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( -1,-1 ), long style = wxTAB_TRAVERSAL, const wxString& name = wxEmptyString );
+
 		~TagPanelGui();
 
 };
@@ -256,6 +258,7 @@ class InfoPanelGui : public wxPanel
 	public:
 
 		InfoPanelGui( wxWindow* parent, wxWindowID id = wxID_ANY, const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 140,111 ), long style = wxTAB_TRAVERSAL, const wxString& name = wxEmptyString );
+
 		~InfoPanelGui();
 
 };
@@ -273,13 +276,14 @@ class DisassemblerPanelGUI : public wxPanel
 		wxChoice* m_choiceBitMode;
 		wxTextCtrl* m_dasmCtrl;
 
-		// Virtual event handlers, overide them in your derived class
+		// Virtual event handlers, override them in your derived class
 		virtual void OnUpdate( wxCommandEvent& event ) { event.Skip(); }
 
 
 	public:
 
 		DisassemblerPanelGUI( wxWindow* parent, wxWindowID id = wxID_ANY, const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( 273,310 ), long style = wxTAB_TRAVERSAL, const wxString& name = wxEmptyString );
+
 		~DisassemblerPanelGUI();
 
 };
@@ -302,7 +306,7 @@ class GotoDialogGui : public wxDialog
 		wxRadioBox* m_branch;
 		wxButton* m_button_go;
 
-		// Virtual event handlers, overide them in your derived class
+		// Virtual event handlers, override them in your derived class
 		virtual void EventHandler( wxCommandEvent& event ) { event.Skip(); }
 		virtual void OnChar( wxKeyEvent& event ) { event.Skip(); }
 		virtual void OnInput( wxCommandEvent& event ) { event.Skip(); }
@@ -315,6 +319,7 @@ class GotoDialogGui : public wxDialog
 	public:
 
 		GotoDialogGui( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Go to Offset"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( -1,-1 ), long style = wxDEFAULT_DIALOG_STYLE|wxSTAY_ON_TOP );
+
 		~GotoDialogGui();
 
 };
@@ -344,7 +349,7 @@ class FindDialogGui : public wxDialog
 		wxButton* btnReplaceAll;
 		wxButton* btnClose;
 
-		// Virtual event handlers, overide them in your derived class
+		// Virtual event handlers, override them in your derived class
 		virtual void OnChar( wxKeyEvent& event ) { event.Skip(); }
 		virtual void EventHandler( wxCommandEvent& event ) { event.Skip(); }
 
@@ -352,6 +357,7 @@ class FindDialogGui : public wxDialog
 	public:
 
 		FindDialogGui( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Find"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( -1,-1 ), long style = wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER );
+
 		~FindDialogGui();
 
 };
@@ -369,13 +375,14 @@ class UpdateDialogGui : public wxDialog
 		wxHyperlinkCtrl* m_hyperlink;
 		wxCheckBox* wxchk_display;
 
-		// Virtual event handlers, overide them in your derived class
+		// Virtual event handlers, override them in your derived class
 		virtual void OnChkDisplay( wxCommandEvent& event ) { event.Skip(); }
 
 
 	public:
 
 		UpdateDialogGui( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("New wxHexEditor Version!"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( -1,-1 ), long style = wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER );
+
 		~UpdateDialogGui();
 
 };
@@ -406,7 +413,7 @@ class CompareDialogGui : public wxDialog
 		wxButton* btnCancel;
 		wxButton* btnCompare;
 
-		// Virtual event handlers, overide them in your derived class
+		// Virtual event handlers, override them in your derived class
 		virtual void OnFileChange( wxFileDirPickerEvent& event ) { event.Skip(); }
 		virtual void EventHandler( wxCommandEvent& event ) { event.Skip(); }
 		virtual void filePickSaveOnFileChanged( wxFileDirPickerEvent& event ) { event.Skip(); }
@@ -415,6 +422,7 @@ class CompareDialogGui : public wxDialog
 	public:
 
 		CompareDialogGui( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Compare Files"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( -1,-1 ), long style = wxDEFAULT_DIALOG_STYLE );
+
 		~CompareDialogGui();
 
 };
@@ -460,7 +468,7 @@ class ChecksumDialogGui : public wxDialog
 		wxButton* btnCancel;
 		wxButton* btnCalculate;
 
-		// Virtual event handlers, overide them in your derived class
+		// Virtual event handlers, override them in your derived class
 		virtual void EventHandler( wxCommandEvent& event ) { event.Skip(); }
 		virtual void OnFileChange( wxFileDirPickerEvent& event ) { event.Skip(); }
 
@@ -468,6 +476,7 @@ class ChecksumDialogGui : public wxDialog
 	public:
 
 		ChecksumDialogGui( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Calculate Checksum"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxDEFAULT_DIALOG_STYLE );
+
 		~ChecksumDialogGui();
 
 };
@@ -492,13 +501,14 @@ class CopyAsDialogGui : public wxDialog
 		wxButton* btnCancel;
 		wxButton* btnCopy;
 
-		// Virtual event handlers, overide them in your derived class
+		// Virtual event handlers, override them in your derived class
 		virtual void EventHandler( wxCommandEvent& event ) { event.Skip(); }
 
 
 	public:
 
 		CopyAsDialogGui( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Copy Selected Block As"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxDEFAULT_DIALOG_STYLE );
+
 		~CopyAsDialogGui();
 
 };
@@ -519,13 +529,14 @@ class XORViewDialogGui : public wxDialog
 		wxButton* btnCancel;
 		wxButton* btnOK;
 
-		// Virtual event handlers, overide them in your derived class
+		// Virtual event handlers, override them in your derived class
 		virtual void EventHandler( wxCommandEvent& event ) { event.Skip(); }
 
 
 	public:
 
 		XORViewDialogGui( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("XORView Thru Warning!"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxDEFAULT_DIALOG_STYLE );
+
 		~XORViewDialogGui();
 
 };
@@ -567,7 +578,7 @@ class PreferencesDialogGui : public wxDialog
 		wxButton* BtnCancel;
 		wxButton* BtnSave;
 
-		// Virtual event handlers, overide them in your derived class
+		// Virtual event handlers, override them in your derived class
 		virtual void EventHandler( wxColourPickerEvent& event ) { event.Skip(); }
 		virtual void OnResetColours( wxCommandEvent& event ) { event.Skip(); }
 		virtual void EventHandler( wxCommandEvent& event ) { event.Skip(); }
@@ -579,6 +590,7 @@ class PreferencesDialogGui : public wxDialog
 	public:
 
 		PreferencesDialogGui( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Preferences"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxDefaultSize, long style = wxCAPTION );
+
 		~PreferencesDialogGui();
 
 };
@@ -598,13 +610,14 @@ class DeviceBackupDialogGui : public wxDialog
 		wxButton* btnCancel;
 		wxButton* btnBackup;
 
-		// Virtual event handlers, overide them in your derived class
+		// Virtual event handlers, override them in your derived class
 		virtual void OnBackup( wxCommandEvent& event ) { event.Skip(); }
 
 
 	public:
 
 		DeviceBackupDialogGui( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Disk/Partition Backup Tool"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( -1,-1 ), long style = wxDEFAULT_DIALOG_STYLE );
+
 		~DeviceBackupDialogGui();
 
 };
@@ -624,13 +637,14 @@ class DeviceRestoreDialogGui : public wxDialog
 		wxButton* btnCancel;
 		wxButton* btnRestore;
 
-		// Virtual event handlers, overide them in your derived class
+		// Virtual event handlers, override them in your derived class
 		virtual void OnRestore( wxCommandEvent& event ) { event.Skip(); }
 
 
 	public:
 
 		DeviceRestoreDialogGui( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Disk/Partition Restore Tool"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( -1,-1 ), long style = wxDEFAULT_DIALOG_STYLE );
+
 		~DeviceRestoreDialogGui();
 
 };
@@ -649,13 +663,14 @@ class DeviceEraseDialogGui : public wxDialog
 		wxButton* btnCancel;
 		wxButton* btnErase;
 
-		// Virtual event handlers, overide them in your derived class
+		// Virtual event handlers, override them in your derived class
 		virtual void OnErase( wxCommandEvent& event ) { event.Skip(); }
 
 
 	public:
 
 		DeviceEraseDialogGui( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxT("Disk/Partition Erase Tool"), const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( -1,-1 ), long style = wxDEFAULT_DIALOG_STYLE );
+
 		~DeviceEraseDialogGui();
 
 };
@@ -676,6 +691,7 @@ class OSXMessageDialogGui : public wxDialog
 	public:
 
 		OSXMessageDialogGui( wxWindow* parent, wxWindowID id = wxID_ANY, const wxString& title = wxEmptyString, const wxPoint& pos = wxDefaultPosition, const wxSize& size = wxSize( -1,-1 ), long style = wxDEFAULT_DIALOG_STYLE );
+
 		~OSXMessageDialogGui();
 
 };
