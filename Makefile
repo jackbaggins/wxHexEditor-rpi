@@ -2,7 +2,7 @@ WXCONFIG ?= wx-config
 HOST=
 OPT_FLAGS += -fopenmp
 LIBSOMP += -lgomp
-WXCXXFLAGS= `$(WXCONFIG) --cxxflags` -Iudis86 -Imhash/include -fopenmp -MMD -Wall -O2 -DNDEBUG
+WXCXXFLAGS= `$(WXCONFIG) --cxxflags` -Iudis86 -Imhash/include -MMD -Wall -O3 -fopenmp
 WXLDFLAGS = `$(WXCONFIG) --libs` `$(WXCONFIG) --libs aui` `$(WXCONFIG) --libs core`
 #add this ldflags for WinConsole  "-Wl,--subsystem,console -mconsole" for win-debug
 #LDFLAGS += -Wl,--subsystem,console -mconsole
@@ -39,7 +39,7 @@ BINDIR      = $(PREFIX)/bin
 DATADIR     = $(PREFIX)/share
 LOCALEDIR   = $(DATADIR)/locale
 
-VERSION = 0.25.1 Beta
+VERSION = 0.25.2 Beta
 
 .DEFAULT_GOAL := all
 

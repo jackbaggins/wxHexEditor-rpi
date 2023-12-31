@@ -1,3 +1,9 @@
+wxHexEditor v0.25.2 Raspberry Pi Beta 30/12/2023
+Merged in latest changes from master repo
+Build against wxWidgets v3.2.4 - which was built from source on Pi5
+Regenerated wxFormBuilder generated source against wxFormBuilder v4.0.0-6 and wxWidgets v3.2.4 (minimal changes - layout changed a bit)
+Implemented SIMDeverywhere so SSE2 native intrinsics could be converted to NEON intrinsics - ARM accelerated Search Speeeed!!!
+
 wxHexEditor v0.25.1 Raspberry Pi Beta 16/10/2023
 Initial release just to get it foundationally working on PiOS
 Adding the additional version number to represent the Raspberri Pi OS version here
